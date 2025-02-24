@@ -15,7 +15,7 @@ const totalBalanceEl = document.getElementById('total-balance');
 depositBtn.addEventListener('click', () => {
   let amount = parseFloat(amountInput.value);
   if (isNaN(amount) || amount <= 0) {
-    alert("Amount must be positive");
+    alert("Amount must be positive or enter your amount");
     return;
   }
   totalDeposit += amount;
